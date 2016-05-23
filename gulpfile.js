@@ -15,7 +15,7 @@ gulp.task('minifica', ['min-html', 'min-css']);
 // Static Serve and watching sass/pug/html files
 gulp.task('browser-sync', ['sass', 'pug'], function() {
   browserSync.init({
-    server: "_/app"
+    server: "_app/"
   });
 
   gulp.watch('_build/assets/sass/*.sass', ['sass']);
