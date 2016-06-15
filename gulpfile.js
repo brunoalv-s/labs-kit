@@ -42,7 +42,7 @@ gulp.task('pug', function(){
 // minify html
 gulp.task('min-html', function() {
   return gulp.src('_app/*.html')
-    .pipe(htmlmin({collapseWhitespace: true, remoeComments: true}))
+    .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
     .pipe(gulp.dest('_app/'))
 });
 // compress css
